@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A3A3A"
+    tools:context=".GameDetail">
+
+    <ImageView
+        android:id="@+id/awayLogoDetail"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/away_team_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ana" />
+
+    <TextView
+        android:id="@+id/awayTeamScoreDetail"
+        android:layout_width="39dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center_vertical"
+        android:text="5"
+        android:textColor="#009688"
+        android:textSize="48sp"
+        app:layout_constraintStart_toEndOf="@+id/awayLogoDetail"
+        app:layout_constraintTop_toTopOf="@+id/awayLogoDetail" />
+
+    <TextView
+        android:id="@+id/awayTeamDetail"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#7CB342"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/awayTeamScoreDetail"
+        app:layout_constraintStart_toStartOf="@+id/awayLogoDetail"
+        app:layout_constraintTop_toBottomOf="@+id/awayLogoDetail" />
+
+    <ImageView
+        android:id="@+id/homeLogoDetail"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/home_team_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/awayLogoDetail"
+        app:srcCompat="@drawable/ana" />
+
+    <TextView
+        android:id="@+id/homeTeamScoreDetail"
+        android:layout_width="39dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_vertical"
+        android:text="5"
+        android:textAlignment="viewEnd"
+        android:textColor="#009688"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/homeLogoDetail"
+        app:layout_constraintTop_toTopOf="@+id/homeLogoDetail" />
+
+    <TextView
+        android:id="@+id/homeTeamDetail"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        android:textColor="#7CB342"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeLogoDetail"
+        app:layout_constraintStart_toStartOf="@+id/homeTeamScoreDetail"
+        app:layout_constraintTop_toBottomOf="@+id/homeLogoDetail" />
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="16dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="@string/dash"
+        android:textColor="#009688"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeLogoDetail" />
+
+    <TextView
+        android:id="@+id/at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        android:gravity="center"
+        android:text="@string/at"
+        android:textColor="#7CB342"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeTeamDetail" />
+
+    <TextView
+        android:id="@+id/gameStatusDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="18dp"
+        android:height="30dp"
+        android:gravity="start"
+        android:text="TextView"
+        android:textAlignment="viewEnd"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/homeTeamDetail"
+        app:layout_constraintTop_toBottomOf="@+id/homeTeamDetail" />
+
+    <TextView
+        android:id="@+id/awayScoringText"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="TextView"
+        android:textAlignment="viewEnd"
+        android:textColor="#7CB342"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoringLegend" />
+
+    <TextView
+        android:id="@+id/scoringLegend"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewEnd"
+        android:textColor="#7CB342"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameStatusDetail" />
+
+    <TextView
+        android:id="@+id/homeScoringText"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="TextView"
+        android:textAlignment="viewEnd"
+        android:textColor="#7CB342"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/awayScoringText" />
+
+    <TextView
+        android:id="@+id/awayTeamNameScoring"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#7CB342"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/awayScoringText" />
+
+    <TextView
+        android:id="@+id/homeTeamNameScoring"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#7CB342"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/awayTeamNameScoring" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

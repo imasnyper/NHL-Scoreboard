@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NHL Scoreboard</string>
+    <string name="nhl_logo">NHL Logo</string>
+    <string name="final_text">Final</string>
+    <string name="final_overtime_text">Final/OT</string>
+    <string name="final_shootout_text">Final/SO</string>
+    <string name="title_activity_game_detail">GameDetail</string>
+
+    <string name="refresh">&#8634;</string>
+    <string name="today">Today</string>
+    <string name="no_games">No Games Today</string>
+
+
+    <string name="dash">-</string>
+    <string name="at">\@</string>
+    <string name="nextDay">&gt;</string>
+    <string name="previousDay">&lt;</string>
+    <string name="away_team_logo">Away Team Logo</string>
+    <string name="home_team_logo">Home Team Logo</string>
+
+    <string name="scoring_summary">1\t\t\t2\t\t\t3\t\t\tT</string>
+    <string name="scoring_summary_overtime">1\t\t\t2\t\t\t3\t\t\tOT\t\t\tT</string>
+    <string name="scoring_summary_shootout">1\t\t\t2\t\t\t3\t\t\tSO\t\t\tT</string>
+</resources>
